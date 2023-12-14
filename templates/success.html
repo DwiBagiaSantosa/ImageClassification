@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='dist/css/output.css')}}">
+</head>
+<body>
+    <div class="flex flex-row justify-center gap-5">
+        <div class="w-96 h-96 bg-gray-100">
+            <img  src="{{url_for('static', filename ='images/'+ img)}}"  alt="Uploaded Image">
+        </div>
+        <div class="w-96 h-96 bg-teal-200">
+            <div>
+                Hasil
+            </div>
+            <div>Class: {{ predictions.class1 }}</div>
+            <!-- <div>{{ predictions.prob1 }}</div> -->
+            <div>{{ predictions.calorie }}</div>
+        </div>
+    </div>
+</body>
+</html>
