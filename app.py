@@ -4,7 +4,7 @@ import uuid
 import tensorflow as tf
 import tensorflow_hub as hub
 
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request
 from PIL import Image
 # from tensorflow.keras.models import load_model
 # from tensorflow.keras.preprocessing.image import load_img , img_to_array
